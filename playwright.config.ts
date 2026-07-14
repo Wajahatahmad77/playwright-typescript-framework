@@ -17,7 +17,7 @@ export default defineConfig({
 
   use: {
     // Open browser in visible mode
-    headless: false,
+    headless: true,
 
     // Capture trace on failure
     trace: 'on-first-retry',
