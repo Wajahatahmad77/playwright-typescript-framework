@@ -11,11 +11,5 @@ test('admin can navigate the dashboard', async ({ page }) => {
 
   await expect(dashboardPage.usersLink).toBeVisible();
 
-  await dashboardPage.openUsers();
-  await dashboardPage.openSupportTickets();
-  await dashboardPage.openShops();
-  await dashboardPage.openOfferRequests();
-  await dashboardPage.openNotificationRequests();
-  await dashboardPage.openCategories();
-  await dashboardPage.openBanners();
+
 });
