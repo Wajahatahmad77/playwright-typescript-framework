@@ -7,7 +7,7 @@ test('admin can navigate the dashboard', async ({ page }) => {
   const dashboardPage = new DashboardPage(page);
 
   await loginPage.goto();
-  await loginPage.login('admin@admin.com', 'qweqwe');
+  await loginPage.login('admin@admin.com', 'qweqwe12');
 
   await expect(dashboardPage.usersLink).toBeVisible();
 
