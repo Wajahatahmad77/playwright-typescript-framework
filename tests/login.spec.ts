@@ -35,7 +35,7 @@ test('does not log in with an invalid email', async ({ page }) => {
   await expect(loginPage.signInButton).toBeVisible();
   await expect(dashboardPage.usersLink).not.toBeVisible();
 });
-
+  
 test('does not log in with a valid email and an invalid password', async ({ page }) => {
   const loginPage = new LoginPage(page);
   const dashboardPage = new DashboardPage(page);
